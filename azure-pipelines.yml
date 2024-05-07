@@ -7,13 +7,13 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: windows-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: call npm install
+  displayName: 'Install node modules'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- script: call npx syncfusion-license activate
+  displayName: 'Activate Syncfusion License'
+  env:
+    SYNCFUSION_LICENSE: $(SYNCFUSION_LICENSE)
