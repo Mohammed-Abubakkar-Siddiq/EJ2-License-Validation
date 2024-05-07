@@ -9,6 +9,9 @@ trigger:
 pool: Default
 
 steps:
+- script: npm init
+  displayName: npm install
+
 - script: call npm install
   displayName: 'Install node modules'
 
