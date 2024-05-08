@@ -8,9 +8,6 @@ trigger:
 
 pool: Default
 
-variables:
-- name: SYNCFUSION_LICENSE
-  value: Mgo+DSMBMAY9C3t2UFhhQlBMfVpdXGFWfFN0QXNYfVRwdF9GYEwgOX1dQl9nSXxSdERiW3ddcHxTQWg=
 
 steps:
 - script: npm init -y
