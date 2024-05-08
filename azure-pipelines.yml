@@ -16,6 +16,9 @@ steps:
 - script: call npm install
   displayName: 'Install node modules'
 
+- script: npm i @syncfusion/ej2-popups
+  displayName: 'Install EJ2 Base'
+
 - script: call npx syncfusion-license activate
   displayName: 'Activate Syncfusion License'
   env:
